@@ -1,0 +1,8 @@
+node{
+    stage("clone"){
+        git "https://github.com/hamburger95/python_files_3.git"
+    }
+    stage("show"){
+        bat "dir"
+    }
+}
