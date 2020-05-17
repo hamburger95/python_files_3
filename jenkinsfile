@@ -1,3 +1,4 @@
+properties([parameters([string(defaultValue: 'somename', description: '', name: 'NAME', trim: false)]), pipelineTriggers([pollSCM('* * * * *')])])
 node{
     stage("clone"){
         git "https://github.com/hamburger95/python_files_3.git"
